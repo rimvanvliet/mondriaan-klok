@@ -32,8 +32,8 @@ const refresh = () => {
 						getalNamen[60 - minuutNum] + "<br>voor<br>"
 	const uurNaam =     (minuutNum === 0) ? getalNamen[uurNum % 12] + "<br>uur" :
 						(minuutNum <= 19) ? getalNamen[uurNum % 12] : getalNamen[(uurNum % 12) + 1]
-	$('p').html("het<br>is<br> "+minuutNaam+uurNaam);
-	console.log("het<br>is<br> "+minuutNaam+uurNaam)
+	$('p').html("het<br>is<br>"+minuutNaam+uurNaam);
+	console.log("het<br>is<br>"+minuutNaam+uurNaam)
 
 }
 
