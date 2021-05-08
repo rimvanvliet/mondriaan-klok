@@ -1,0 +1,61 @@
+@media screen and (orientation:landscape) {
+    .container{
+        height: 98vh;
+        width: 98vh;
+    }
+}
+@media screen and (orientation:portrait) {
+    .container{
+        height: 98vw;
+        width: 98vw;
+    }
+}
+
+body {
+	background-color: #222;
+}
+
+div {
+	border: #000;
+	border-style: solid;
+	border-width: 0;
+}
+
+.box {
+	display: grid;
+}
+
+.brdr {
+	border-width: 10px;
+}
+
+.brdrt {
+	border-top-width: 20px;
+}
+
+.brdrr {
+	border-right-width: 20px;
+}
+
+.left-half {
+  grid-column: 1;
+}
+
+.right-half {
+  grid-column: 2;
+}
+
+.upper-half {
+  grid-row: 1;
+}
+
+.lower-half {
+  grid-row: 2;
+}
+
+p {
+	color: white;
+	text-align: left;
+	font-size: 10vh;
+	font-family: Verdana;
+}
