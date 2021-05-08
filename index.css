@@ -57,5 +57,5 @@ p {
 	color: white;
 	text-align: left;
 	font-size: 10vh;
-	font-family: Verdana;
+    font-family: Verdana, sans-serif;
 }
