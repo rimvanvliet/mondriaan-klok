@@ -1,6 +1,6 @@
 const klokKleur = ['white','yellow','red','blue']
 
-const getalNamen = ["half","een","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf",
+const getalNamen = ["twaalf","een","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf",
 					"twaalf","dertien","veertien","kwart","zestien","zeven-<br>tien","achttien","negen-<br>tien"]
 
 const pad6 = (num) => { return ('00000' + num).substr(-6); }
@@ -11,9 +11,9 @@ const refresh = () => {
 	console.log(now)
 
 	const minuutNum = now.getMinutes()
-	const uurNum24 = now.getHours()
+	const uurNum = now.getHours()
 
-	const uren = pad6(uurNum24.toString(2)).split("").map(x => 2 * x)
+	const uren = pad6(uurNum.toString(2)).split("").map(x => 2 * x)
 	const minuten = pad6(minuutNum.toString(2)).split("").map(x => parseInt(x))
 	const kleurNrs = uren.map(function(u, i) { return u + minuten[i]})
 
@@ -28,10 +28,9 @@ const refresh = () => {
 						(minuutNum <= 44) ? getalNamen[minuutNum - 30] + "<br>over<br>half<br>" :
 						getalNamen[60 - minuutNum] + "<br>voor<br>"
 
-	const uurNum12 = (uurNum24 -1) % 12 +1
-	const uurNaam =     (minuutNum === 0) ? getalNamen[uurNum12] + "<br>uur" :
-						(minuutNum <= 19) ? getalNamen[uurNum12] : getalNamen[((uurNum12) + 1) % 12]
-	$('p').html("het<br>is<br>"+minuutNaam+uurNaam);
+	const uurNaam =     (minuutNum === 0) ? getalNamen[uurNum % 12] + "<br>uur" :
+						(minuutNum <= 19) ? getalNamen[uurNum % 12] : getalNamen[(uurNum % 12 + 1) ]
+	$('.tijdtekst').html("het<br>is<br>"+minuutNaam+uurNaam);
 	console.log("het is "+(minuutNaam+uurNaam).replaceAll("<br>", " "))
 
 	setTimeout(refresh, 1000*(60 - now.getSeconds()) - now.getMilliseconds());

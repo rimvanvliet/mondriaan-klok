@@ -53,9 +53,39 @@ div {
   grid-row: 2;
 }
 
-p {
+.tijdtekst {
 	color: white;
 	text-align: left;
 	font-size: 10vh;
     font-family: Verdana, sans-serif;
+}
+
+.info {
+    float: right;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-family: Verdana, sans-serif;
+    visibility: hidden;
+    width: 25vw;
+    background-color: white;
+    color: #333;
+    text-align: left;
+    border-radius: 6px;
+    padding: 15px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 100%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

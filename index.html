@@ -1,39 +1,54 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<link rel="stylesheet" href="index.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<div class="box">
-		<div class="container left-half box brdr">
-			<div class="upper-half box">
-				<div class="left-half box">
-					<div id="2" class="upper-half box brdr"></div>
-					<div class="lower-half box ">
-						<div id="3" class="left-half brdr"></div>
-						<div class="right-half box brdr">
-							<div class="upper-half box">
-								<div class="left-half brdrr"></div>
-								<div id="5" class="right-half "></div>
-							</div>
-							<div id="4" class="lower-half brdrt"></div>
-						</div>
-					</div>
-				</div>
-				<div id="1" class="right-half brdr"></div>
-			</div>
-			<div id="0" class="lower-half box brdr"></div>
-		</div>
-		<div class="right-half">
-			<p>
-				Het is twee uur.
-			</p>
-		</div>
-	</div>
+<div class="box">
+    <div class="container left-half box brdr">
+        <div class="upper-half box">
+            <div class="left-half box">
+                <div id="2" class="upper-half box brdr"></div>
+                <div class="lower-half box ">
+                    <div id="3" class="left-half brdr"></div>
+                    <div class="right-half box brdr">
+                        <div class="upper-half box">
+                            <div class="left-half brdrr"></div>
+                            <div id="5" class="right-half "></div>
+                        </div>
+                        <div id="4" class="lower-half brdrt"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="1" class="right-half brdr"></div>
+        </div>
+        <div id="0" class="lower-half box brdr"></div>
+    </div>
+    <div class="right-half">
+        <div class="info">
+            <div class="tooltip">
+                <div class="tooltiptext">
+                    <h2>De binaire Mondriaan klok</h2>
+                    <p>De klok is verdeeld in een denkbeeldig raster van 8 x 8, dus met een oppervlakte 64.</p>
+                    <p>In dat raster is de klok is verdeeld in 7 vakken met oppervlaktes van 1, 2, 4, 8, 16 of 32.</p>
+                    <p>Het donkergrijze vak in het midden telt niet mee.</p>
+                    <p>De uren worden bepaald door de oppervlakte van de rode + blauwe vakken.</p>
+                    <p>De minuten worden bepaald door de oppervlakte van de gele + blauwe vakken.</p>
+                    <p>Omdat de kleurenklok niet makkelijk leest heb ik de tijd in tekst ernaast gezet. De tekstklok is
+                        een 12 uurs klok, de kleurenklok een 24 uurs klok.</p>
+                    <p>De klok is in 2021 gemaakt door Ruud van Vliet als cadeau voor talloze eerdere verjaardagen van
+                        Hans Koning, waarbij een beloofde hardware versie niet wilde lukken.</p>
+                </div>
+                <img src="info.png" alt="info">
+            </div>
+        </div>
+        <p class="tijdtekst"></p>
+    </div>
+</div>
 
 </body>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="index.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
 </html> 
 
