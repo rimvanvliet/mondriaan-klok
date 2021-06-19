@@ -1,7 +1,7 @@
 const klokKleur = ['white','yellow','red','blue']
 
 const getalNamen = ["twaalf","een","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf",
-					"twaalf","dertien","veertien","kwart","zestien","zeven-<br>tien","achttien","negen-<br>tien"]
+					"twaalf","der-<br>tien","veer-<br>tien","kwart","zes-<br>tien","zeven-<br>tien","acht-<br>tien","negen-<br>tien"]
 
 const pad6 = (num) => { return ('00000' + num).substr(-6); }
 
