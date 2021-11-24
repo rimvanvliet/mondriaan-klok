@@ -53,7 +53,7 @@ div {
   grid-row: 2;
 }
 
-.tijdtekst {
+#tijdtekst {
 	color: white;
 	text-align: left;
 	font-size: 10vh;

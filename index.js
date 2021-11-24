@@ -28,7 +28,7 @@ const refresh = () => {
 
 	const uurNaam =     (minuutNum === 0) ? getalNamen[uurNum % 12] + "<br>uur" :
 						(minuutNum <= 19) ? getalNamen[uurNum % 12] : getalNamen[(uurNum % 12 + 1) ]
-	$('.tijdtekst').html("het<br>is<br>"+minuutNaam+uurNaam);
+	$('#tijdtekst').html("het<br>is<br>"+minuutNaam+uurNaam);
 
 	setTimeout(refresh, 1000*(60 - now.getSeconds()) - now.getMilliseconds());
 }
